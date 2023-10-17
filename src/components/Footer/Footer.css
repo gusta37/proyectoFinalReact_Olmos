@@ -7,6 +7,9 @@
         justify-content: center;
         align-items: center;
     }
+    .footerLogo_img{
+        width: 100px;
+    }
 }
 
 .footer_logo{
@@ -31,12 +34,25 @@
     border-radius: 50%;
 }
 
+@media (max-width: 1150px) {
+   
+    .footerLogo_img{
+        width: 150px;
+    }
+}
+
 .footerLogo_text{
     font-family: 'Dancing Script', cursive;
     color: black;
     font-size: 2vw;
 }
 
+@media (max-width: 1150px) {
+   
+    .footerLogo_text{
+        font-size: 5vw;
+    }
+}
 .footerCreater{
     display: flex;
     align-items: center;
