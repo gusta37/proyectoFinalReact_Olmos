@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/* font-family: 'Dancing Script', cursive; */
+
+.logo_img{
+    width: 200px;
+    height: auto;
+    margin-top: 50px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.logo_text{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    font-size: 8vw;
+}
