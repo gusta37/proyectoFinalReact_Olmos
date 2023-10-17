@@ -6,6 +6,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }    
+    .footer_logo{
+        padding-bottom: 25px;
     }
     .footerLogo_img{
         width: 100px;
@@ -60,3 +63,9 @@
     /* border: 2px solid black; */
 }
 
+@media (max-width: 1150px) {
+   
+    .footerCreater{
+        padding-top: 25px;
+    }
+}
