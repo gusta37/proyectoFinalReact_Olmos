@@ -1,5 +1,8 @@
 import './ItemDetail.css';
 import ItemCount from '../ItemCount/ItemCount.js';
+import { useContext, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { CartContext } from '../../context/CartContext';
 
 const ItemDetail = ({id, name, img, category, description, price, stock})=> {
     
@@ -11,6 +14,20 @@ const ItemDetail = ({id, name, img, category, description, price, stock})=> {
         maximumFractionDigits: 2,
       }).format(price);
     
+    const [ quantityAdded, setQuantityAdded ] = useState(0);
+
+    const {addItem} = useContext(CartContext);
+
+    const handleOnAdd = (quantity)=>{
+        setQuantityAdded(quantity);
+
+        const item = {
+            id, name, price
+        }
+
+        addItem(item, quantity);
+    }
+ 
     return (
         <article className='CardItemDet has-background-primary'>
             
@@ -38,7 +55,16 @@ const ItemDetail = ({id, name, img, category, description, price, stock})=> {
 
             </section>
             <footer className='ItemFooter'>
-                <ItemCount initial={1} stock={stock} onAdd={(quantity) => console.log ('Cantidad agregada ', quantity)}/>
+
+                {
+                    quantityAdded > 0 ? (
+                        <Link to='/cart' className="btn button mb-5 is-medium is-responsive is-white is-outlined">Terminar compra</Link>
+                    ):(
+                        <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>
+                    )
+                }
+                <Link to='/cart' className="btn button mb-5 is-medium is-responsive is-white is-outlined">Ver Carrito</Link>
+                <Link to='/#' className="btn button mb-5 is-medium is-responsive is-white is-outlined">Volver</Link>
             </footer>
             
         </article>

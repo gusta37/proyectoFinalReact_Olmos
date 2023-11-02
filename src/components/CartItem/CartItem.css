@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+/* font-family: 'Dancing Script', cursive; */
+
+.cartItemContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cartName{
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    margin: 10px;
+}
+.cartText{
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    padding: 20px;
+}
