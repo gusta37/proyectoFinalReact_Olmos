@@ -7,6 +7,12 @@ import './Cart.css';
 const Cart = () => {
   const { cart, clearCart, totalQuantity, total, removeItem } =
     useContext(CartContext);
+    const formattedTotal = new Intl.NumberFormat('es-AR', {
+      style: 'currency',
+      currency: 'ARS',
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    }).format(total);
 
   if (totalQuantity === 0) {
     return (
@@ -30,7 +36,7 @@ const Cart = () => {
         ))}
       </div>
 
-      <h1 className="CartTotal">Total ${total.toFixed(2)}</h1>
+      <h1 className="CartTotal">Total {formattedTotal}</h1>
 
       <div className="is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
         <button className="btn button m-5 is-large is-responsive is-primary is-outlined" onClick={() => clearCart()}>Limpiar carrito</button>

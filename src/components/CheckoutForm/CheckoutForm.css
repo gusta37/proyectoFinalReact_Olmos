@@ -1,0 +1,10 @@
+.form{
+    border: 2px solid hsl(171, 100%, 41%);
+    margin: 25px;
+}
+p{
+    border-radius: 5px;
+}
+.input::placeholder {
+    color: black;
+  }
