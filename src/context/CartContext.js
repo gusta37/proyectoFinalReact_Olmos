@@ -12,8 +12,6 @@ export const CartProvider = ({children}) => {
     const [cart, setCart] = useState([]);
     const [total, setTotal] = useState(0);
 
-    console.log(cart);
-
     const addItem = (item, quantity)=>{
         if(!isInCart(item.id)){
             setCart(prev=>[...prev, {...item, quantity}])
@@ -46,7 +44,6 @@ export const CartProvider = ({children}) => {
     }
 
     useEffect(() => {
-        // Recalcula el total cada vez que cambia el carrito
         let newTotal = 0;
         cart.forEach((item) => {
             newTotal += item.price * item.quantity;
@@ -60,5 +57,3 @@ export const CartProvider = ({children}) => {
     </CartContext.Provider>
   )
 }
-
-// export default CartContext;

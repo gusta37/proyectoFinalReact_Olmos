@@ -1,4 +1,3 @@
-import "./ItemCount.css";
 import { useState } from "react";
 
 const ItemCount = ({ stock, initial, onAdd }) => {
@@ -16,7 +15,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
   };
 
   return (
-    <div className="counter is-flex-mobile m-5">
+    <div className="counter is-flex-mobile m-5 is-justify-content-center">
       <div className="controls">
         <button className="btn button m-2 is-normal is-responsive is-white is-outlined" onClick={decrement}>
           -
@@ -27,7 +26,6 @@ const ItemCount = ({ stock, initial, onAdd }) => {
         <button className="btn button m-2 is-normal is-responsive is-white is-outlined" onClick={increment}>
           +
         </button>
-
       </div>
 
       <div className="agregar">

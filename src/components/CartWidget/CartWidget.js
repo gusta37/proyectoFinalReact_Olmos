@@ -4,7 +4,6 @@ import { CartContext } from "../../context/CartContext";
 import { Link } from "react-router-dom";
 import "./CartWidget.css";
 
-//lo importo en el navbar pq quiero que este dentro de el.
 const CartWidget = () => {
   const { totalQuantity } = useContext(CartContext);
 

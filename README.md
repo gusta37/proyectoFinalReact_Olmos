@@ -1,3 +1,33 @@
+# Introducción:
+
+> Profe: sinceramente disfrute mucho realizar este trabajo, aunque tenia un poco de temor ya que soy personal de salud(enfermero), y no se mucho de diseño ni de programación. Igualmente decidí afrontar el desafío y lo realice lo mejor que podia. Me senti tan cómodo que aproveche para practicar bastante de diseño, usando Css y aprendiendo a usar Bulma, y también para repasar el diseño responsivo.
+> Realizo una pagina de venta de ropa, basada en la telenovela "Bety La Fea".
+> Aprovecho la temática para repasar, como mencione anteriormente, diseño responsivo. Para ello agrego junto al catalogo de productos, un sector "sobre nosotros" donde se describe la empresa y otro sector sobre el equipo, donde se presenta a cada integrante. en este ultimo se crean queries que adaptan las imágenes y los textos según el tamaño del dispositivo.
+
+## Antes de entregar:
+
+> Como se solicito se limpio el código eliminando por ejemplo, código que estaba comentado y que no se usaba. Se eliminaron varios archivo que no se usaban ya, como el archivo asyncMock.js.
+> Se cumplen con las consignas solicitadas.
+
+### complementos:
+
+> nav y footer: en ambos se coloca el logo de la empresa y el menu de navegación. ambos tienen distintas propiedades en css que logra acomodar de distinta forma los botones, aunque los botones navegan funcionalmente. el logo tiene enlace hacia el inicio y el resto de los botones a las distintas categorías.
+
+> En nav también se coloca el icono del carrito, el cual muestra la cantidad de productos agregados y funciona como link que lleva hasta el carrito.
+
+> dentro de itemlistcontainer tenemos todos los productos que muestran la informacion ontenida directamente desde la base de datos de firebase. 
+
+> cuando vemos el detalle del producto encontramos un contador que nos permite agregar una cantidad deseada de ese producto. al agregar ya veremos el icono del carrito y cuantos productos. dentro de destalle veremos botones de opcion para volver al inicio, terminar la compra o ver el carrito. tambien tenemos un boton de limpiar carrito que borrara todos los productos.
+
+> todos los valores de los precios poseen una funcion que formatea los valores a formato de peso argentino.
+
+> cuando deseamos terminar la compra, al presionar el boton de terminar compra, podemos realizar el checkout, el cual nos arrojara un numero de orden.
+
+> sE CAMBIAN CREDENCIALES DE FIREBASE POR VARIABLES DE ENTORNO.
+
+#### Profe, lo que agregue en este readme fue a las apuradas que no tenia mas tiempo, perdon! y MUCHAS GRACIAS!
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

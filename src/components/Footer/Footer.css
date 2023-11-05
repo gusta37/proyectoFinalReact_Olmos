@@ -15,17 +15,12 @@
     }
 }
 
-.footer_logo{
-    /* border: 2px solid black; */
-}
-
 .footerCategories{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 0;
-    /* border: 2px solid black; */
 }
 
 .footerLogo_img{
@@ -59,8 +54,6 @@
 .footerCreater{
     display: flex;
     align-items: center;
-    /* padding: 0; */
-    /* border: 2px solid black; */
 }
 
 @media (max-width: 1150px) {

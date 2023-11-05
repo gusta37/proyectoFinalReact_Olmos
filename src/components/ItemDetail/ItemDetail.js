@@ -6,7 +6,6 @@ import { CartContext } from '../../context/CartContext';
 
 const ItemDetail = ({id, name, img, category, description, price, stock})=> {
     
-    //formatea el precio a peso argentino, con dos decimales
     const formattedPrice = new Intl.NumberFormat('es-AR', {
         style: 'currency',
         currency: 'ARS',

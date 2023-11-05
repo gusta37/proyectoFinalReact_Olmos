@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-// import { getProducts, getProductsByCategory } from "../../asyncMock.js";
 import ItemList from "../ItemList/ItemList.js";
 import { useParams } from "react-router-dom";
 
@@ -49,7 +48,7 @@ const ItemListContainer = ({ greeting }) => {
 
   return (
     <div>
-      {categoryId ? null : ( //me ayuda a esconder los siguientes elemento cuando salgo de la pagina principal.
+      {categoryId ? null : (
         <div>
           <h1 className="saludo m-5 has-text-primary">{greeting}</h1>
           <p className="title p-5 mt-5 has-text-white has-background-primary is-size-1-desktop">

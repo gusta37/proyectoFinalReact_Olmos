@@ -3,7 +3,7 @@ import './Item.css'
 
 const Item = ({id, name, img, price, stock}) => {
 
-    //formatea el precio a peso argentino, con dos decimales
+    
     const formattedPrice = new Intl.NumberFormat('es-AR', {
         style: 'currency',
         currency: 'ARS',
